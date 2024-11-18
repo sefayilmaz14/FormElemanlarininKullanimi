@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Kullanıcı Bilgileri Formu</h1>
+    <form action="/submit" method="post">
+        <!-- Ad ve Soyad -->
+        <label for="firstName">Ad:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br><br>
+        <label for="lastName">Soyad:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br><br>
+
+        <!-- E-posta -->
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Parola -->
+        <label for="password">Parola:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Cinsiyet -->
+        <label>Cinsiyet:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Erkek</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Kadın</label>
+        <br><br>
+
+        <!-- Favori Meyve -->
+        <label for="favoriteFruit">Favori Meyveniz:</label>
+        <select id="favoriteFruit" name="favoriteFruit" required>
+            <option value="elma">Elma</option>
+            <option value="muz">Muz</option>
+            <option value="çilek">Çilek</option>
+        </select>
+        <br><br>
+
+        <!-- Mesaj -->
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Mesajınızı buraya yazın..."></textarea>
+        <br><br>
+
+        <!-- Gönder Butonu -->
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
